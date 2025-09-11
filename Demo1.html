@@ -26,7 +26,24 @@
                     background-color:
                     lightcyan;
                 }
+
+            .header {
+                display: grid;
+                grid-template-columns:1fr
+                1fr;
+                gap:10px;
+                grid-template-areas:
+                   "item1-item2"
+
+            }
             
+            .item1 { grid-area: item1;
+                background-color: lightblue;
+                text-align: center;}
+
+            .item2 {grid-area: item;
+            background-color: lightgreen;
+        text-align: center;}
         </style>
 
         <link rel ="stylesheet" href = "Styles.css">
@@ -37,6 +54,9 @@
         <div class = "header">
             <h1 style ="color: blue; text-align:center">Welcome to HTML1! </h1>
             <span id = "highlight">HTML!</span></div></h>
+
+        
+
         </div>
         <p>This is a paragraph elemnet, <b>HTML</b> uses tags to mark up content.</p>
         <img src="http://1.bp.blogspot.com/-NGHwBncyA68/UiMm_8b2ZUI/AAAAAAAAAnA/17OGXCKI4zE/s1600/Logo+HTML5.JPG" alt="HTML Logo">
@@ -107,4 +127,5 @@
 
     </form>
     </body>
+    
 </html>
